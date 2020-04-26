@@ -1,0 +1,78 @@
+.radio-choice-group {
+  display: block;
+  border: 1px dashed gray;  /* comment me out in prod! */
+}
+
+.radio-choice-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 0.5rem;
+}
+
+.radio-choice-icon {
+  display: inline;
+  width: 10%;
+  text-align: center;
+}
+
+.radio-choice-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+
+.radio-choice-tile-input {
+  display: inline;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1; 
+  cursor: pointer;
+}
+
+.radio-choice-tile-fill {
+  display: inline;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  /* width: 77%; */
+  /* border: 2px #CCCCCC; */
+  border-radius: 5px;
+  background-color: #CCCCCC;
+}
+
+.radio-choice-tile-border {
+  display: inline;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.radio-choice-tile-label {
+  display: inline;
+  position: relative;
+  padding-left: 0.5rem; 
+}
+
+.radio-choice-pct {
+  display: inline;
+  position: relative;
+  width: 20%;
+  padding-left: 0.5rem;
+}

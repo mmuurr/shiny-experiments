@@ -1,0 +1,3 @@
+shinyjs.init_question_timer = function() {
+    window.question_timer = new easytimer.Timer();
+}
