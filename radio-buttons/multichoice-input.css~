@@ -1,6 +1,6 @@
 .radio-choice-group {
   display: block;
-  border: 1px dashed gray;  /* comment me out in prod! */
+  border: 1px dashed gray;
 }
 
 .radio-choice-container {
@@ -11,10 +11,6 @@
   width: 100%;
   height: 4rem;
   margin: 0.5rem;
-}
-.radio-choice-container[data-choice-unavailable] {
-  pointer-events: none;
-  opacity: 0.5;
 }
 
 .radio-choice-icon {
@@ -51,23 +47,6 @@
   left: 0px;
   top: 0px;
   height: 100%;
-  border-radius: 5px;
-  width: 0%;  /* default: overridden by inline width style */
-  /* background-color: #CCCCCC; */
-}
-.radio-choice-container[data-answer="selected"] .radio-choice-tile-fill {
-    width: 100% !important;
-    background-color: #5FAAFF;
-}
-.radio-choice-container[data-answer="correct"] .radio-choice-tile-fill {
-    background-color: #5FAAFF;
-}
-.radio-choice-container[data-answer="incorrect"] .radio-choice-tile-fill {
-    background-color: #FF454B;
-}
-.radio-choice-container[data-answer="skip"] .radio-choice-tile-fill {
-    background-color: #BFBFBF;
-}
   /* width: 77%; */
   /* border: 2px #CCCCCC; */
   border-radius: 5px;
@@ -81,7 +60,7 @@
   top: 0px;
   width: 100%;
   height: 100%;
-  border: 2px solid #0077FF;
+  border: 2px solid blue;
   border-radius: 5px;
 }
 
