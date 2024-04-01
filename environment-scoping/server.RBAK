@@ -1,0 +1,8 @@
+print("reading server.R")
+
+f_server <- function() NULL
+explore(f_server, "server")
+
+function(input, output, session) {
+  print(sprintf("running server function for session %s", session$token))
+}

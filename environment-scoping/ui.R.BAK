@@ -1,6 +1,9 @@
+print("reading ui.R")
+
 f_ui <- function() NULL
 explore(f_ui, "ui")
 
 function() {
+  print("running ui function")
   fluidPage()
 }

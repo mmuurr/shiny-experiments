@@ -9,9 +9,21 @@ library(shiny)
 ##   tags$script(src = "foo")
 ## )
 
+## ui <- fluidPage(
+##   singleton(tags$script(src = "foo")),
+##   tags$head(singleton(tags$script(src = "foo")))  
+## )
+
 ui <- fluidPage(
-  singleton(tags$script(src = "foo")),
-  tags$head(singleton(tags$script(src = "foo")))  
+  singleton(
+    tags$head(
+      tags$script(src = "foo")
+    )
+  ),
+  tags$head(
+    tags$script(src = "foo"),
+    tags$script(src = "bar")
+  )
 )
 
 server <- function(input, output, session) {
